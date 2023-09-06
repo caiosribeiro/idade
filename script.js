@@ -13,42 +13,52 @@ function verificar(){
         img.setAttribute('id', 'foto')
         if (fsex[0].checked){
             genero = 'Homem'
-            if(idade >= 0 && idade < 15) {
-                //criança
+            if(idade >= 0 && idade < 3) {
+                res.innerHTML = `Detectamos <strong>Bebê</strong> com <u>${idade} anos</u>.</break>`
+                img.setAttribute('src', 'imagens/bebeM.png')
+            } else if(idade < 11){
                 res.innerHTML = `Detectamos <strong>Criança</strong> com <u>${idade} anos</u>.</break>`
-                img.setAttribute('src', 'imagens/foto-bebe-m.png')
-            } else if(idade < 30){
-                //jovem
+                img.setAttribute('src', 'imagens/foto-crianca-m.png')
+            } else if(idade < 14){
+                res.innerHTML = `Detectamos <strong>Pré-adolescente</strong> com <u>${idade} anos</u>.</break>`
+                img.setAttribute('src', 'imagens/preM.png')
+            } else if(idade < 18){
+                res.innerHTML = `Detectamos <strong>Adolescente</strong> com <u>${idade} anos</u>.</break>`
+                img.setAttribute('src', 'imagens/adolescenteM.png')
+            } else if(idade < 35){
                 res.innerHTML = `Detectamos <strong>Jovem</strong> com <u>${idade} anos</u>.</break>`
                 img.setAttribute('src', 'imagens/foto-jovem-m.png')
             } else if(idade < 60){
-                //adulto
                 res.innerHTML = `Detectamos <strong>Adulto</strong> com <u>${idade} anos</u>.</break>`
                 img.setAttribute('src', 'imagens/foto-adulto-m.png')
             } else {
-                //idoso
                 res.innerHTML = `Detectamos <strong>Idoso</strong> com <u>${idade} anos</u>.</break>`
                 img.setAttribute('src', 'imagens/foto-idoso-m.png')
             }                           
         }else if (fsex[1].checked){
             genero = 'Mulher'            
-            if(idade >= 0 && idade < 15) {
-                //criança
+            if(idade >= 0 && idade < 3) {
+                res.innerHTML = `Detectamos <strong>Bebê</strong> com <u>${idade} anos</u>.</break>`
+                img.setAttribute('src', 'imagens/bebeF.png')
+            } else if(idade < 11){
                 res.innerHTML = `Detectamos <strong>Criança</strong> com <u>${idade} anos</u>.</break>`
-                img.setAttribute('src', 'imagens/foto-bebe-f.png')
-            } else if(idade < 30){
-                //jovem
+                img.setAttribute('src', 'imagens/foto-crianca-f.png')
+            } else if(idade < 14){
+                res.innerHTML = `Detectamos <strong>Pré-adolescente</strong> com <u>${idade} anos</u>.</break>`
+                img.setAttribute('src', 'imagens/preF.png')
+            } else if(idade < 18){
+                res.innerHTML = `Detectamos <strong>Adolescente</strong> com <u>${idade} anos</u>.</break>`
+                img.setAttribute('src', 'imagens/adolescenteF.png')
+            } else if(idade < 35){
                 res.innerHTML = `Detectamos <strong>Jovem</strong> com <u>${idade} anos</u>.</break>`
-                img.setAttribute('src', 'imagens/foto-jovem-f.png')                
+                img.setAttribute('src', 'imagens/foto-jovem-f.png')
             } else if(idade < 60){
-                //adulto
-                res.innerHTML = `Detectamos <strong>Adulta</strong> com <u>${idade} anos</u>.</break>`
-                img.setAttribute('src', 'imagens/foto-adulto-f.png')                
+                res.innerHTML = `Detectamos <strong>Adulto</strong> com <u>${idade} anos</u>.</break>`
+                img.setAttribute('src', 'imagens/foto-adulto-f.png')
             } else {
-                //idoso
-                res.innerHTML = `Detectamos <strong>Idosa</strong> com <u>${idade} anos</u>.</break>`
+                res.innerHTML = `Detectamos <strong>Idoso</strong> com <u>${idade} anos</u>.</break>`
                 img.setAttribute('src', 'imagens/foto-idoso-f.png')
-            }      
+            }   
         }
         res.style.textAlign = 'center'
         
