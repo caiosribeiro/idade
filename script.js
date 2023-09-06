@@ -61,7 +61,8 @@ function verificar(){
             }   
         }
         res.style.textAlign = 'center'
-        
+        res.style.color = 'skyblue'
+        res.style.fontSize = '25px'
         res.appendChild(img)
     }
 }
