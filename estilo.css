@@ -4,8 +4,6 @@ body{
     background: linear-gradient(blue, purple);
 }
 
-
-
 header{
     color: green;
     text-align: center;
@@ -66,4 +64,38 @@ img{
     right: 2px;
     border: 1px solid black;
     height: 300px;
+}
+
+@media only screen and (max-width: 590px){
+    section{
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 415px){
+    #cima{
+        position: relative;
+        right: 1%;
+    }
+
+    section{
+        position: relative;
+        right: 1%;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    #cima{
+        position: relative;
+        left: 3%;
+    }
+
+    section{
+        width: 300px;
+    }
+
+    #res p{
+        position: relative;
+        top: 50px;
+    }
 }
