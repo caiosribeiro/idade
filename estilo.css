@@ -94,8 +94,7 @@ img{
 @media only screen and (max-width: 400px){
     #cima{
         position: relative;
-        left: 3%;
-        margin-left: -1%;
+        margin-left: -2%;
         width: 112%;
     }
 
