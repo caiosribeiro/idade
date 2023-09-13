@@ -6,6 +6,7 @@
 
 body{
     font: normal 15px Arial;
+    width: 99%;
     background-size: 100%;
     background: linear-gradient(blue, purple);
 }
