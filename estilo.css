@@ -6,7 +6,7 @@
 
 body{
     font: normal 15px Arial;
-    width: 99%;
+    background-size: 100%;
     background: linear-gradient(blue, purple);
 }
 
@@ -105,5 +105,11 @@ img{
     #res p{
         position: relative;
         top: 50px;
+    }
+}
+
+@media only screen and (max-width: 385px){
+    #verifica{
+        float: left;
     }
 }
