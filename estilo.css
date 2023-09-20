@@ -1,9 +1,3 @@
-* { 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body{
     font: normal 15px Arial;
     background: linear-gradient(blue, purple);
@@ -18,15 +12,13 @@ section{
     background-size: 100% 100%;
     border-radius: 10px;
     padding: 15px;
-    width: 500px;
+    width: 50%;
     margin: auto;
     box-shadow: 3px 3px 10px black;
     position: relative;
     top: 10px;
 }
-div{
 
-}
 footer{
     color: white;
     text-align: center;
@@ -67,47 +59,30 @@ img{
     background: url('imagens/idades.png') no-repeat;
     background-size: 100% 100%;
     position: relative;
-    top: -10px;
-    border: 1px solid black;
-    height: 300px;
+    top: -27px;
+    height: 500px;
 }
 
-@media only screen and (max-width: 590px){
+@media only screen and (max-width:710px){
     section{
-        width: 400px;
+        width: 70%;
     }
 }
 
-@media only screen and (max-width: 415px){
-    #cima{
-        position: relative;
-        right: 1%;
-    }
-
+@media only screen and (max-width:500px){
     section{
-        position: relative;
-        right: 1%;
+        width: 90%;
     }
 }
 
 @media only screen and (max-width: 400px){
-    #cima{
-        position: relative;
-        margin-left: -2%;
-        width: 112%;
-    }
-
-    section{
-        width: 96%;
-    }
-
     #res p{
         position: relative;
         top: 50px;
     }
 
-    #verifica h1{
+    .verifica h1{
         position: relative;
-        top: -10px;
+        top: 10px;
     }
 }
